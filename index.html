@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+
+    <title>Cadastro de usuário</title>
+</head>
+
+<body background="img/fundocep.jpg">
+    
+        <div class="caixa-form">
+            <h1 class="cadastro-titulo">Cadastro de Usuário</h1>
+                <form>
+                    <div id="caixa-forms" class="form-row">
+                        
+                      <div class="form-group col-md-4">
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="*Email">
+                      </div>
+
+                      <div class="form-group col-md-4">
+                        <label>CPF</label>
+                        <input type="text" class="form-control" id="cpf" placeholder="cpf">
+                      </div>
+
+                      <div class="form-group col-md-4">
+                        <label>nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome">
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label>CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="CEP">
+                        </div>
+
+                        <div class="form-group col-md-5">
+                            <label>Rua</label>
+                            <input type="text"class="form-control"  id="rua" placeholder="Rua">
+                        </div>
+
+                        <div class="form-group col-md-2">
+                            <label>Nº</label>
+                            <input type="text" class="form-control" id="numero" placeholder="*Número">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>Estado</label>
+                            <input type="text" class="form-control" id="estado" placeholder="Estado" > 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            As informações estão corretas?<br> Se sim clique no botão de enviar
+                        </label>
+                      </div>
+                    </div>
+
+                  </form>
+                  <button onclick="confirmacao()" type="submit" id="enviar" class="btn btn-primary">Enviar</button>
+
+               
+
+        </div>
+
+        <div class="imprime">
+        <div id="nomePrint"></div>
+        <div id="cpfPrint"></div>
+        <div id="emailPrint"></div>
+        <div id="cepPrint"></div>
+        <div id="ruaPrint"></div>
+        <div id="numeroPrint"></div>
+        <div id="cidadePrint"></div>
+        <div id="estadoPrint"></div>
+      </div>
+      
+    <br><br><br>
+    <script src="./script.js"></script>
+
+    
+    
+</body>
+   
+</html>
